@@ -15,18 +15,20 @@ labels = [0,0,1,1]
 
 # Step 2 : Use our examples(data) to train a classifier
     # The classifier finds patterns in our data by itself(by using the fit function) and creates "rules" to classify our inputs (or predict results)
-    # fit() is the training algorithm defined in sklearn
+    # fit() is the training method defined in sklearn. Here we're using the Decision Tree algorithm
 
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(features, labels)
 
 # Step 3 : Now that we have trained our classifier, we can give it inputs to make predictions for us(to label them)
-    # we give inputs by calling the predit() function and passing as arguments new features (so an array with 2 bits of data in our case)
+    # we give inputs by calling the predict() function and passing as arguments new features (so an array with 2 bits of data in our case)
     # the classifier will label each set of features based on what it learned
+    # the correct labels are for us to see if the classifier gets it right
 test_data = [[160, 0], [130, 0], [144, 1]]
 test_labels = [1, 1, 0]
 print("\nCorrect results : \n", *test_labels)
 print("Program predicts(Tree clf) : \n", *clf.predict(test_data), "\n\n---------------------\n")
+
 # Creating my own classifier - it should predict if a user liked a video or not based on 5 features we'll give it
 # Based on these features, the label will simply be either liked or not liked (represented by 1 and 0 accordingly)
 """
@@ -46,10 +48,10 @@ print("Program predicts(Tree clf) : \n", *clf.predict(test_data), "\n\n---------
 features2 = [[30, 0, 1, 2, 0], [28, 0, 0, 2, 0], [68, 0, 1, 1, 0], [92, 1, 1, 1, 1],
              [67, 1, 1, 2, 0], [24, 0, 1, 0, 0], [94, 0, 0, 1, 1], [53, 0, 0, 0, 0]]
 labels2 = [0, 0, 0, 1, 1, 0, 1, 0]
-# Train the classifier with our dataw
+# Train the classifier with our data
 clfG = GaussianNB().fit(features2, labels2)
 clfT = tree.DecisionTreeClassifier().fit(features2, labels2)
-# Label the features we're passing in
+# Predict the label for the features we're passing in
 test_data = [[22,0,1,2,0], [82,1,1,1,1], [95,1,0,1,1], [32,0,0,0,0], [50, 1, 0, 0, 0], [50, 0, 0, 0, 0]]
 test_label = [0,1,1,0,1,0]
 clfG = clfG.predict(test_data)
