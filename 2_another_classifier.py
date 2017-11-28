@@ -23,11 +23,11 @@ for i in range(len(iris_data.data)):
 
 # Now we can train the classifier but first we need to remove at least one flower example so we can feed it in afterwards and see if it guesses correctly
 # Aka training data vs testing data
-# We will remove first setos, first versicolor, first virginica
+# We will remove 4 setos(indeces 0, 1, 3, 10), 2 versicolor (indeces 50, 51), 2 virginica(indeces 100, 121)
 import numpy as np
 data_to_remove = [[0, 1, 50, 10, 51, 3, 100, 121]]
 
-# training data (axis 0 simply means we're deleting rows, not columns)
+# training data (axis 0 simply means we're deleting features rows, not columns)
 training_data = np.delete(iris_data.data, data_to_remove, axis = 0)
 training_target = np.delete(iris_data.target, data_to_remove)
 
