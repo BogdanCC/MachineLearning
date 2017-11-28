@@ -23,7 +23,7 @@ for i in range(len(iris_data.data)):
 
 # Now we can train the classifier but first we need to remove at least one flower example so we can feed it in afterwards and see if it guesses correctly
 # Aka training data vs testing data
-# We will remove 4 setos(indeces 0, 1, 3, 10), 2 versicolor (indeces 50, 51), 2 virginica(indeces 100, 121)
+# We will remove 4 setosa (indeces 0, 1, 3, 10), 2 versicolor (indeces 50, 51), 2 virginica (indeces 100, 121)
 import numpy as np
 data_to_remove = [[0, 1, 50, 10, 51, 3, 100, 121]]
 
@@ -35,7 +35,7 @@ training_target = np.delete(iris_data.target, data_to_remove)
 test_data = iris_data.data[data_to_remove]
 test_target = iris_data.target[data_to_remove]
 
-# 2. Training classifier - Let's use 2 different learning algorithms
+# 2. Training classifier - Let's use 2 different learning algorithms : Decision Tree and Naive Bayes
 from sklearn import tree
 clf = tree.DecisionTreeClassifier()
 clf.fit(training_data, training_target)
