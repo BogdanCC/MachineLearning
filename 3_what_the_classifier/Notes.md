@@ -27,6 +27,6 @@ Now let's add another blue dot. As you can see below, this time the line changed
 
 So this is **linear regression**. This is pretty much how the classifier is trained. The more examples we give it, the more it will adjust the line to separate the labels. Then, when we give it test data (so only features). You can imagine a new dot (red or blue) on the graph, and depending on which side of the line it is, the classifier will label it.
 
-![State 4 of the graph](Notes Pictures/fourthgraph.png?raw=true "Optional Title")
+![State 4 of the graph](3_what_the_classifier/Notes Pictures/fourthgraph.png?raw=true "Optional Title")
 
 The slightly transparent dots represent the test data, so the features we're passing into the classifier to predict if it is a red dot or a blue dot. The classifier will say *"Alright, to my left there are red dots so whatever new is on my left I'll label it 'red dot', and whatever is on my right 'blue dot'"*
