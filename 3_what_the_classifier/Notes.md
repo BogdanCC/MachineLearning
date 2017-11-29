@@ -1,9 +1,9 @@
 # The classifier is a function
-X is the independent variable (the features)
+X is the independent variable (the features)<br />
 y is the dependent variable (the label)
 
 The function is **f(x) = y**. So **f(features) = label**, which you can translate in *"Depending on the features we get the label"*.<br /> 
-And **y = mx + b**. This gives the position of the line. We change the parameters m and b to change the line position on the graph. The **m** parameter changes the line's rotation, while **b** changes the line's position. More on this below
+And **y = mx + b**. This gives the position of the line. We change the parameters **m** and **b** to change the **line position** on the graph. The **m** parameter changes the line's rotation, while **b** changes the line's position. More on this below
 
 In the picture below there is a line drawn between some dots. We can say the dots above the line have one label, and the dots below the line have another label. And the line distinguishes between them.
 
