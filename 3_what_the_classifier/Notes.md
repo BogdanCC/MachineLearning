@@ -7,7 +7,7 @@ And **y = mx + b**. This gives the position of the line. We change the parameter
 
 In the picture below there is a line drawn between some dots. We can say the dots above the line have one label, and the dots below the line have another label. And the line distinguishes between them.
 
-![Picture from yt channel statisticsfun](Notes Pictures/maxresdefault.jpg?raw=true "Optional Title")
+![Picture from yt channel statisticsfun](https://raw.githubusercontent.com/BogdanCC/MachineLearning/master/3_what_the_classifier/Notes Pictures/maxresdefault.jpg)
 
 # More examples
 
