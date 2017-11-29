@@ -16,7 +16,7 @@ When we train our classifier, we give it training data. Let's say we've just giv
 ![State 1 of the graph](https://raw.githubusercontent.com/BogdanCC/MachineLearning/master/3_what_the_classifier/Notes%20Pictures/firstgraph.png)
 
 Now let's add another example to our classifier. A new set of features and this time with a different label(a blue dot) than before. Since we have a different label, the line needs to change the **m** and **b** parameters to change its position between the 2 labels (here we changed the **b** parameter more. This changes the **position** of the line, while **m** changes the **rotation** <br />of the line).<br />
-If we would have given it an example with the same label as the first one (another red dot in this case), the line would not have changed, because again, there would be nothing to distinguish from yet.<br />
+If we would have given it an example with the same label as the first one (another red dot in this case), the line would move to make these two equal labels are on the same side <br />
 (In the picture below, the slightly transparent line is to show the *previous position* of the line and how it moved)
 
 ![State 2 of the graph](https://raw.githubusercontent.com/BogdanCC/MachineLearning/master/3_what_the_classifier/Notes%20Pictures/secondgraph.png)
